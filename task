@@ -1,0 +1,57 @@
+//html code
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Online Code Editor</title>
+    <style>
+      #editor {
+        width: 100%;
+        height: 500px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="editor"></div>
+    <button onclick="runCode()">Run Code</button>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/mode-javascript.js"></script>
+    <script>
+      var editor = ace.edit("editor");
+      editor.session.setMode("ace/mode/javascript");
+      editor.setTheme("ace/theme/monokai");
+      
+      function runCode() {
+        var code = editor.getValue();
+        eval(code);
+      }
+    </script>
+  </body>
+</html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Online Code Editor</title>
+    <style>
+      #editor {
+        width: 100%;
+        height: 500px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="editor"></div>
+    <button onclick="runCode()">Run Code</button>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/mode-javascript.js"></script>
+    <script>
+      var editor = ace.edit("editor");
+      editor.session.setMode("ace/mode/javascript");
+      editor.setTheme("ace/theme/monokai");
+      
+      function runCode() {
+        var code = editor.getValue();
+        eval(code);
+      }
+    </script>
+  </body>
+</html>
